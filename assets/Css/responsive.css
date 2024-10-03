@@ -1,0 +1,48 @@
+@media only screen and (max-width:576px){
+    .wrapper{
+        padding: 0 1rem;
+        display: block;
+        max-width: 100%;
+    }    
+    .Left_section{
+        height: 100%;
+        width:100%;
+        position: relative;
+        padding: 2rem 0;
+    }
+    .Left_section div p{
+        max-width: 100%;
+        margin: 10px 10px 0px 0px;
+    }
+    .nav_items{
+        padding: 20px 0;
+    }
+    .nav_items .nav_lists{
+        margin: 0;
+    }
+    .Right_section{
+        padding: 2rem 0;
+        width: 100%;
+    }
+    .Experience_section{
+        padding: 2rem 0;
+    }
+    .Experience_details ul{
+        margin: 10px 10px 0 10px;
+    }
+    .Project_section{
+        padding: 3rem 0;
+    }
+    .Project_one{
+        display: block;
+    }
+    .Project_one img{
+        width: 100%;
+    }
+    .Project_one div h5{
+        padding: 0.5rem 0 0.5rem 0;
+    }
+    .project_links{
+        margin: 0.5rem 0;
+    }
+}
