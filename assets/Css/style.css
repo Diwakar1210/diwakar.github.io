@@ -155,12 +155,29 @@ a{
     color: var(--txt-clr);
     line-height: 24px;
 }
+.Right_section .About_section p a{
+    color:var(--secondary-clr);
+    font-weight: bold;
+    transition:opacity 0.5s ease;
+}
+.Right_section .About_section p a:hover{
+    opacity:0.7;
+}
 .Experience_section{
     padding: 6rem 0;
 }
 .Experience_details h3{
     font-size: clamp(0.875rem, 0.6412rem + 0.6494vw, 1.25rem);
 }
+.Experience_details h3 a{
+    vertical-align: middle;
+}
+.Experience_details h3 a img{
+    display: inline-block;
+    transition:transform 0.5s ease;
+    width: 24px;
+}
+
 .Experience_details span{
     font-size: clamp(0.625rem, 0.5471rem + 0.2165vw, 0.75rem);
     color: var(--txt-clr);
@@ -183,18 +200,23 @@ a{
     font-size: clamp(0.875rem, 0.7971rem + 0.2165vw, 1rem);
 }
 .Experience_details .resume a{
-    display: inline-block;
+    display: inline-flex;
     font-size: clamp(0.75rem, 0.6721rem + 0.2165vw, 0.875rem);
     background-color: var(--secondary-clr);
-    color:var(--primary-clr);
+    color: var(--primary-clr);
     font-weight: 500;
     padding: 0.5rem 1rem;
-    border-radius:4px;
+    border-radius: 4px;
     margin-top: 20px;
-    transition:opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    align-items: center;
+    gap: 5px;
 }
 .Experience_details .resume a:hover{
     opacity:0.7;
+}
+.Experience_details .resume a img{
+    width: 20px;
 }
 .Project_section{
     padding: 6rem 0;
@@ -204,6 +226,7 @@ a{
     margin: 1rem 0;
     padding: 0.7rem 0.7rem;
     border-radius: 4px;
+    transition:all 0.5s ease;
 }
 .project_links:hover{
     background-color: #00000010;
@@ -216,14 +239,44 @@ a{
 .Project_one img{
     width:200px;
     object-fit: contain;
+    height: 100%;
+    margin: auto;
 }
 .Project_one div h5{
     font-size: clamp(0.8125rem, 0.6956rem + 0.3247vw, 1rem);
     color: var(--txt-clr);
     padding: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.Project_one div h5 img{
+    width:22px;
+}
+.project_links .Project_one div h5 img{
+    transform: rotate(0deg);
+}
+.project_links:hover .Project_one div h5 img{
+    transform: rotate(45deg);
 }
 .Project_one div p{
     font-size: clamp(0.6875rem, 0.5706rem + 0.3247vw, 0.875rem);
     color: var(--txt-clr);
+}
+.fullProject a{
+    display: inline-flex;
+    font-size: clamp(0.75rem, 0.6721rem + 0.2165vw, 0.875rem);
+    background-color: var(--secondary-clr);
+    color: var(--primary-clr);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: opacity 0.3s ease;
+    align-items: center;
+    gap: 5px;
+}
+.fullProject a:hover{
+    opacity:0.7;
 }
 /* Ends */
